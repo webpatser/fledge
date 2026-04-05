@@ -27,7 +27,7 @@ You don't need this skeleton. Just swap the framework in your existing project:
 composer config repositories.fledge vcs https://github.com/webpatser/fledge-framework
 
 # Replace Laravel's framework with Fledge
-composer require "laravel/framework:dev-fledge-13" -W
+composer require "laravel/framework:^13.3" -W
 ```
 
 To switch back:

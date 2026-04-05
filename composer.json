@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": "^8.5",
-        "laravel/framework": "dev-fledge-13",
+        "laravel/framework": "^13.3",
         "laravel/tinker": "^2.10.1"
     },
     "require-dev": {
