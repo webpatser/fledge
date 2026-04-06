@@ -7,14 +7,20 @@
     "license": "MIT",
     "repositories": [
         {
+            "name": "fledge",
+            "type": "path",
+            "url": "packages/framework"
+        },
+        {
             "type": "vcs",
             "url": "https://github.com/webpatser/fledge-framework"
         }
     ],
     "require": {
         "php": "^8.5",
-        "webpatser/fledge-framework": "^13.3",
-        "laravel/tinker": "^2.10.1"
+        "laravel/tinker": "^3.0",
+        "webpatser/fledge-fiber-database": "^0.1.0",
+        "webpatser/fledge-framework": "*@dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

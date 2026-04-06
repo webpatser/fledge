@@ -1,5 +1,18 @@
 # Release Notes
 
+## Fledge
+
+### Fledge 13 (2026-04-06)
+
+- Add `webpatser/fledge-fiber-database` — non-blocking Fiber-based MySQL, MariaDB, and PostgreSQL drivers
+- Add `amphp-mysql`, `amphp-mariadb`, `amphp-pgsql` connection configs to `config/database.php`
+- Default Redis driver set to amphp for non-blocking I/O
+- Use `webpatser/fledge-framework` as drop-in replacement for `laravel/framework`
+
+---
+
+## Laravel (upstream)
+
 ## [Unreleased](https://github.com/laravel/laravel/compare/v12.11.2...12.x)
 
 ## [v12.11.2](https://github.com/laravel/laravel/compare/v12.11.1...v12.11.2) - 2026-01-19

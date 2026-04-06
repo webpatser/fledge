@@ -16,7 +16,29 @@ php artisan serve
 
 A standard Laravel 13 application that uses `webpatser/fledge-framework` instead of `laravel/framework`. Everything works the same — same Artisan commands, same directory structure, same ecosystem compatibility. Just faster.
 
-Out of the box, Fledge uses `amphp/redis` for non-blocking Redis I/O on every cache, session, queue, and lock operation. No code changes needed — set `REDIS_CLIENT=phpredis` in `.env` to fall back to the synchronous driver.
+Out of the box, Fledge includes:
+
+- **Non-blocking Redis** via `amphp/redis` for cache, session, queue, and lock operations
+- **Non-blocking HTTP** via `amphp/http-client` replacing cURL as the Guzzle transport
+- **Non-blocking Database** via [`fledge-fiber-database`](https://github.com/webpatser/fledge-fiber-database) — Fiber-based MySQL, MariaDB, and PostgreSQL drivers with concurrent query support
+
+### Fiber Database Drivers
+
+Set `DB_CONNECTION=amphp-mysql` in `.env` to use the non-blocking MySQL driver. Queries suspend the current Fiber while waiting for I/O, allowing other Fibers to progress concurrently.
+
+Run multiple queries in parallel:
+
+```php
+use Fledge\FiberDatabase\FiberDB;
+
+[$users, $posts, $count] = FiberDB::concurrent(
+    fn() => User::where('active', true)->get(),
+    fn() => Post::latest()->limit(10)->get(),
+    fn() => Comment::where('approved', false)->count(),
+);
+```
+
+Available drivers: `amphp-mysql`, `amphp-mariadb`, `amphp-pgsql`. Connection config is preconfigured in `config/database.php`.
 
 See [fledge-framework](https://github.com/webpatser/fledge-framework) for details on what's optimized and why.
 
