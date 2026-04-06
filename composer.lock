@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2bcb7f0e3ac963ff60598cb5dffa9eb3",
+    "content-hash": "bd6bb7d2ec6d136b2e66fac30b1ab079",
     "packages": [
         {
             "name": "amphp/amp",
@@ -7073,16 +7073,16 @@
         },
         {
             "name": "webpatser/fledge-fiber-database",
-            "version": "v0.1.1",
+            "version": "v13.3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webpatser/fledge-fiber-database.git",
-                "reference": "31ff5bcc331c3d5117c33050d4c75ac039f4a161"
+                "reference": "493ca6efde45d89ac84426b8d4ac6cb9d90dd1e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webpatser/fledge-fiber-database/zipball/31ff5bcc331c3d5117c33050d4c75ac039f4a161",
-                "reference": "31ff5bcc331c3d5117c33050d4c75ac039f4a161",
+                "url": "https://api.github.com/repos/webpatser/fledge-fiber-database/zipball/493ca6efde45d89ac84426b8d4ac6cb9d90dd1e3",
+                "reference": "493ca6efde45d89ac84426b8d4ac6cb9d90dd1e3",
                 "shasum": ""
             },
             "require": {
@@ -7130,22 +7130,22 @@
             ],
             "support": {
                 "issues": "https://github.com/webpatser/fledge-fiber-database/issues",
-                "source": "https://github.com/webpatser/fledge-fiber-database/tree/v0.1.1"
+                "source": "https://github.com/webpatser/fledge-fiber-database/tree/v13.3.0.0"
             },
-            "time": "2026-04-06T13:49:03+00:00"
+            "time": "2026-04-06T14:16:47+00:00"
         },
         {
             "name": "webpatser/fledge-fiber-http",
-            "version": "v0.1.0",
+            "version": "v13.3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webpatser/fledge-fiber-http.git",
-                "reference": "eff74f0969474af5f66f537a4ffee4dffd1abb2a"
+                "reference": "89fe7f98ca383ec19a9c372a542227c2f7eb0516"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webpatser/fledge-fiber-http/zipball/eff74f0969474af5f66f537a4ffee4dffd1abb2a",
-                "reference": "eff74f0969474af5f66f537a4ffee4dffd1abb2a",
+                "url": "https://api.github.com/repos/webpatser/fledge-fiber-http/zipball/89fe7f98ca383ec19a9c372a542227c2f7eb0516",
+                "reference": "89fe7f98ca383ec19a9c372a542227c2f7eb0516",
                 "shasum": ""
             },
             "require": {
@@ -7189,22 +7189,22 @@
             ],
             "support": {
                 "issues": "https://github.com/webpatser/fledge-fiber-http/issues",
-                "source": "https://github.com/webpatser/fledge-fiber-http/tree/v0.1.0"
+                "source": "https://github.com/webpatser/fledge-fiber-http/tree/v13.3.0.0"
             },
-            "time": "2026-04-06T14:12:14+00:00"
+            "time": "2026-04-06T14:16:52+00:00"
         },
         {
             "name": "webpatser/fledge-fiber-redis",
-            "version": "v0.1.0",
+            "version": "v13.3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webpatser/fledge-fiber-redis.git",
-                "reference": "d5378db28ae3b429de1a21c124ccf606b9ce2adc"
+                "reference": "55c4ac83a5706ca63ad43ddca8819ad2e97b4caa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webpatser/fledge-fiber-redis/zipball/d5378db28ae3b429de1a21c124ccf606b9ce2adc",
-                "reference": "d5378db28ae3b429de1a21c124ccf606b9ce2adc",
+                "url": "https://api.github.com/repos/webpatser/fledge-fiber-redis/zipball/55c4ac83a5706ca63ad43ddca8819ad2e97b4caa",
+                "reference": "55c4ac83a5706ca63ad43ddca8819ad2e97b4caa",
                 "shasum": ""
             },
             "require": {
@@ -7245,9 +7245,9 @@
             ],
             "support": {
                 "issues": "https://github.com/webpatser/fledge-fiber-redis/issues",
-                "source": "https://github.com/webpatser/fledge-fiber-redis/tree/v0.1.0"
+                "source": "https://github.com/webpatser/fledge-fiber-redis/tree/v13.3.0.0"
             },
-            "time": "2026-04-06T14:02:40+00:00"
+            "time": "2026-04-06T14:16:49+00:00"
         },
         {
             "name": "webpatser/fledge-framework",
