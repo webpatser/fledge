@@ -16,6 +16,8 @@ php artisan serve
 
 A standard Laravel 13 application that uses `webpatser/fledge-framework` instead of `laravel/framework`. Everything works the same — same Artisan commands, same directory structure, same ecosystem compatibility. Just faster.
 
+Out of the box, Fledge uses `amphp/redis` for non-blocking Redis I/O on every cache, session, queue, and lock operation. No code changes needed — set `REDIS_CLIENT=phpredis` in `.env` to fall back to the synchronous driver.
+
 See [fledge-framework](https://github.com/webpatser/fledge-framework) for details on what's optimized and why.
 
 ## Switching an Existing Laravel 13 Project
