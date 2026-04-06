@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d579932c0b613cc79484bf0fcd61129",
+    "content-hash": "2bcb7f0e3ac963ff60598cb5dffa9eb3",
     "packages": [
         {
             "name": "amphp/amp",
@@ -7135,6 +7135,65 @@
             "time": "2026-04-06T13:49:03+00:00"
         },
         {
+            "name": "webpatser/fledge-fiber-http",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webpatser/fledge-fiber-http.git",
+                "reference": "eff74f0969474af5f66f537a4ffee4dffd1abb2a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webpatser/fledge-fiber-http/zipball/eff74f0969474af5f66f537a4ffee4dffd1abb2a",
+                "reference": "eff74f0969474af5f66f537a4ffee4dffd1abb2a",
+                "shasum": ""
+            },
+            "require": {
+                "amphp/http-client": "^5.3",
+                "guzzlehttp/guzzle": "^7.8",
+                "guzzlehttp/psr7": "^2.4",
+                "illuminate/http": "^13.0",
+                "illuminate/support": "^13.0",
+                "php": "^8.5"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.6",
+                "pestphp/pest": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Fledge\\FiberHttp\\FiberHttpServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fledge\\FiberHttp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Non-blocking Fiber-based HTTP client handler for Fledge/Laravel using amphp",
+            "keywords": [
+                "Guzzle",
+                "amphp",
+                "async",
+                "fiber",
+                "fledge",
+                "http",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/webpatser/fledge-fiber-http/issues",
+                "source": "https://github.com/webpatser/fledge-fiber-http/tree/v0.1.0"
+            },
+            "time": "2026-04-06T14:12:14+00:00"
+        },
+        {
             "name": "webpatser/fledge-fiber-redis",
             "version": "v0.1.0",
             "source": {
@@ -7196,11 +7255,10 @@
             "dist": {
                 "type": "path",
                 "url": "packages/framework",
-                "reference": "c6d1996f0e6da5e562cbd3abb5950d009476e4e5"
+                "reference": "92d4acfece23844d96f5fa8d21b25eb186a9c6f1"
             },
             "require": {
                 "amphp/amp": "^3.1",
-                "amphp/http-client": "^5.3",
                 "brick/math": "^0.14.2 || ^0.15 || ^0.16 || ^0.17",
                 "composer-runtime-api": "^2.2",
                 "doctrine/inflector": "^2.0.5",
