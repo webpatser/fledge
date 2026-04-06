@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0756e13cde8f4a687cc9e9ff3b482423",
+    "content-hash": "2d579932c0b613cc79484bf0fcd61129",
     "packages": [
         {
             "name": "amphp/amp",
@@ -7135,17 +7135,72 @@
             "time": "2026-04-06T13:49:03+00:00"
         },
         {
+            "name": "webpatser/fledge-fiber-redis",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webpatser/fledge-fiber-redis.git",
+                "reference": "d5378db28ae3b429de1a21c124ccf606b9ce2adc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webpatser/fledge-fiber-redis/zipball/d5378db28ae3b429de1a21c124ccf606b9ce2adc",
+                "reference": "d5378db28ae3b429de1a21c124ccf606b9ce2adc",
+                "shasum": ""
+            },
+            "require": {
+                "amphp/redis": "^2.0",
+                "illuminate/redis": "^13.0",
+                "illuminate/support": "^13.0",
+                "php": "^8.5"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.6",
+                "pestphp/pest": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Fledge\\FiberRedis\\FiberRedisServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fledge\\FiberRedis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Non-blocking Fiber-based Redis driver for Fledge/Laravel using amphp",
+            "keywords": [
+                "amphp",
+                "async",
+                "fiber",
+                "fledge",
+                "laravel",
+                "redis"
+            ],
+            "support": {
+                "issues": "https://github.com/webpatser/fledge-fiber-redis/issues",
+                "source": "https://github.com/webpatser/fledge-fiber-redis/tree/v0.1.0"
+            },
+            "time": "2026-04-06T14:02:40+00:00"
+        },
+        {
             "name": "webpatser/fledge-framework",
             "version": "13.x-dev",
             "dist": {
                 "type": "path",
                 "url": "packages/framework",
-                "reference": "37787cb2f2500d61fcfb4c9cc8ec143731005d8d"
+                "reference": "c6d1996f0e6da5e562cbd3abb5950d009476e4e5"
             },
             "require": {
                 "amphp/amp": "^3.1",
                 "amphp/http-client": "^5.3",
-                "amphp/redis": "^2.0",
                 "brick/math": "^0.14.2 || ^0.15 || ^0.16 || ^0.17",
                 "composer-runtime-api": "^2.2",
                 "doctrine/inflector": "^2.0.5",

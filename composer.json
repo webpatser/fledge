@@ -20,6 +20,7 @@
         "php": "^8.5",
         "laravel/tinker": "^3.0",
         "webpatser/fledge-fiber-database": "^0.1.0",
+        "webpatser/fledge-fiber-redis": "^0.1.0",
         "webpatser/fledge-framework": "*@dev"
     },
     "require-dev": {
