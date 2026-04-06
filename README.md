@@ -18,9 +18,11 @@ A standard Laravel 13 application that uses `webpatser/fledge-framework` instead
 
 Out of the box, Fledge includes:
 
-- **Non-blocking Redis** via `amphp/redis` for cache, session, queue, and lock operations
-- **Non-blocking HTTP** via `amphp/http-client` replacing cURL as the Guzzle transport
 - **Non-blocking Database** via [`fledge-fiber-database`](https://github.com/webpatser/fledge-fiber-database) — Fiber-based MySQL, MariaDB, and PostgreSQL drivers with concurrent query support
+- **Non-blocking Redis** via [`fledge-fiber-redis`](https://github.com/webpatser/fledge-fiber-redis) — Fiber-based Redis for cache, session, queue, and lock operations
+- **Non-blocking HTTP** via [`fledge-fiber-http`](https://github.com/webpatser/fledge-fiber-http) — amphp-powered Guzzle handler replacing cURL
+- **Non-blocking DNS** — `active_url` validation uses amphp/dns; all fiber drivers resolve DNS asynchronously via amphp/socket
+- **Fiber Queue Worker** via [`torque`](https://github.com/webpatser/torque) — concurrent job processing replacing Laravel Horizon
 
 ### Fiber Database Drivers
 

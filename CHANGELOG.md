@@ -4,9 +4,15 @@
 
 ### Fledge 13 (2026-04-06)
 
-- Add `webpatser/fledge-fiber-database` — non-blocking Fiber-based MySQL, MariaDB, and PostgreSQL drivers
+- Add `webpatser/fledge-fiber-database` v13.3.0.0 — non-blocking MySQL, MariaDB, PostgreSQL drivers
+- Add `webpatser/fledge-fiber-redis` v13.3.0.0 — non-blocking Redis driver (extracted from framework)
+- Add `webpatser/fledge-fiber-http` v13.3.0.0 — non-blocking HTTP handler (extracted from framework)
 - Add `amphp-mysql`, `amphp-mariadb`, `amphp-pgsql` connection configs to `config/database.php`
 - Default Redis driver set to amphp for non-blocking I/O
+- Non-blocking DNS via amphp/dns for `active_url` validation and all fiber driver connections
+- Framework: add `getPrefix()` to Redis Connection contract (cleaner than instanceof checks)
+- Framework: add `Factory::globalHandler()` for pluggable HTTP transport
+- Framework: add container-based Redis connector resolution (`redis.connector.{driver}`)
 - Use `webpatser/fledge-framework` as drop-in replacement for `laravel/framework`
 
 ---
