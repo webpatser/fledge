@@ -19,10 +19,7 @@
 /storage/*.key
 /storage/pail
 /vendor
-/packages
-CLAUDE.md
+_ide_helper.php
 Homestead.json
 Homestead.yaml
 Thumbs.db
-.claude/
-/baseline
