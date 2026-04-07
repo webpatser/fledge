@@ -1,0 +1,14 @@
+=== FLEDGE BASELINE BENCHMARK ===
+PHP Version: 8.5.0
+Date: 2026-01-30 09:44:47
+==================================================
+Arr::first (no callback)                 0.0003 ms
+Arr::first (with callback)               0.1708 ms
+Arr::last (no callback)                  0.0002 ms
+Arr::last (with callback)                0.2651 ms
+Collection::first()                      0.0002 ms
+Collection::last()                       0.0003 ms
+Collection::filter->map->first           1.0036 ms
+Str pipeline                             0.0129 ms
+
+Results saved to benchmark-results.json
