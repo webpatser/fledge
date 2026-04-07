@@ -2,6 +2,13 @@
 
 ## Fledge
 
+### Fledge 13.3.0.7 (2026-04-07)
+
+- Add `ConcurrentMiddlewareGroup` — run independent middleware in parallel using fibers
+- Add `ConcurrentMiddleware` contract with `before()` / `after()` interface
+- Add `HasConcurrentMiddleware` trait for Router concurrent group registration
+- Concurrent groups integrate via existing middleware parameter syntax (`concurrent:group-name`)
+
 ### Fledge 13 (2026-04-06)
 
 - Add `webpatser/fledge-fiber-database` v13.3.0.0 — non-blocking MySQL, MariaDB, PostgreSQL drivers

@@ -22,6 +22,7 @@ Out of the box, Fledge includes:
 - **Non-blocking Redis** via [`fledge-fiber-redis`](https://github.com/webpatser/fledge-fiber-redis) — Fiber-based Redis for cache, session, queue, and lock operations
 - **Non-blocking HTTP** via [`fledge-fiber-http`](https://github.com/webpatser/fledge-fiber-http) — amphp-powered Guzzle handler replacing cURL
 - **Non-blocking DNS** — `active_url` validation uses amphp/dns; all fiber drivers resolve DNS asynchronously via amphp/socket
+- **Concurrent Middleware** — run independent middleware in parallel using fibers via `ConcurrentMiddlewareGroup`
 - **Fiber Queue Worker** via [`torque`](https://github.com/webpatser/torque) — concurrent job processing replacing Laravel Horizon
 
 ### Fiber Database Drivers
@@ -41,6 +42,30 @@ use Fledge\FiberDatabase\FiberDB;
 ```
 
 Available drivers: `amphp-mysql`, `amphp-mariadb`, `amphp-pgsql`. Connection config is preconfigured in `config/database.php`.
+
+### Concurrent Middleware
+
+Run independent middleware in parallel using fibers. Middleware that implement `ConcurrentMiddleware` can be grouped and executed concurrently — ideal for middleware that perform independent I/O like Redis lookups, API key validation, or rate limit checks.
+
+```php
+// In your Kernel
+protected $concurrentMiddleware = [
+    'io-checks' => [
+        ValidateApiKey::class,      // Redis lookup
+        CheckRateLimit::class,      // Redis lookup
+        LoadSubscriptionTier::class // Redis lookup
+    ],
+];
+
+protected $middlewareGroups = [
+    'api' => [
+        'concurrent:io-checks',    // 3 Redis calls in ~5ms instead of ~15ms
+        SubstituteBindings::class,
+    ],
+];
+```
+
+Each middleware implements `before(Request): Request|Response` and `after(Request, Response): Response`. The group runs all `before()` methods concurrently via the FiberDriver, merges request modifications, continues down the pipeline, then runs all `after()` methods concurrently.
 
 See [fledge-framework](https://github.com/webpatser/fledge-framework) for details on what's optimized and why.
 
