@@ -1,32 +1,11 @@
 # Release Notes
 
-## Fledge
+## [Unreleased](https://github.com/laravel/laravel/compare/v13.1.2...13.x)
 
-### Fledge 13.3.0.7 (2026-04-07)
+## [v13.1.2](https://github.com/laravel/laravel/compare/v13.1.1...v13.1.2) - 2026-03-31
 
-- Add `ConcurrentMiddlewareGroup` — run independent middleware in parallel using fibers
-- Add `ConcurrentMiddleware` contract with `before()` / `after()` interface
-- Add `HasConcurrentMiddleware` trait for Router concurrent group registration
-- Concurrent groups integrate via existing middleware parameter syntax (`concurrent:group-name`)
-
-### Fledge 13 (2026-04-06)
-
-- Add `webpatser/fledge-fiber-database` v13.3.0.0 — non-blocking MySQL, MariaDB, PostgreSQL drivers
-- Add `webpatser/fledge-fiber-redis` v13.3.0.0 — non-blocking Redis driver (extracted from framework)
-- Add `webpatser/fledge-fiber-http` v13.3.0.0 — non-blocking HTTP handler (extracted from framework)
-- Add `amphp-mysql`, `amphp-mariadb`, `amphp-pgsql` connection configs to `config/database.php`
-- Default Redis driver set to amphp for non-blocking I/O
-- Non-blocking DNS via amphp/dns for `active_url` validation and all fiber driver connections
-- Framework: add `getPrefix()` to Redis Connection contract (cleaner than instanceof checks)
-- Framework: add `Factory::globalHandler()` for pluggable HTTP transport
-- Framework: add container-based Redis connector resolution (`redis.connector.{driver}`)
-- Use `webpatser/fledge-framework` as drop-in replacement for `laravel/framework`
-
----
-
-## Laravel (upstream)
-
-## [Unreleased](https://github.com/laravel/laravel/compare/v13.1.1...13.x)
+* Prevents installed package from executing malicious code via `postinstall` by [@crynobone](https://github.com/crynobone) in https://github.com/laravel/laravel/pull/6777
+* Add missing comma in axios by [@aziyan99](https://github.com/aziyan99) in https://github.com/laravel/laravel/pull/6779
 
 ## [v13.1.1](https://github.com/laravel/laravel/compare/v13.1.0...v13.1.1) - 2026-03-31
 
