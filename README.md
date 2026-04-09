@@ -93,6 +93,7 @@ composer require "laravel/framework:^13.0" -W
 - PHP 8.5+
 - intl extension
 - Composer 2.x
+- PHPUnit 11, 12, or 13 (matches laravel/framework support)
 
 ## Credits
 

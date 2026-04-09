@@ -1,6 +1,12 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/laravel/compare/v13.1.2...13.x)
+## [Unreleased](https://github.com/webpatser/fledge/compare/v13.1.2.1...master)
+
+## [v13.1.2.1](https://github.com/webpatser/fledge/compare/v13.1.2...v13.1.2.1) - 2026-04-09
+
+* Fix CI: require PHP 8.5 in all workflows (was using 8.3)
+* Fix CI: trigger framework workflows on `fledge-*` branches
+* Align PHPUnit constraint with laravel/framework (`^11.5.50 || ^12.5.8 || ^13.0.3`)
 
 ## [v13.1.2](https://github.com/laravel/laravel/compare/v13.1.1...v13.1.2) - 2026-03-31
 
