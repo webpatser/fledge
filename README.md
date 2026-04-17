@@ -2,7 +2,7 @@
 
 **Laravel 13 application skeleton, optimized for PHP 8.5**
 
-This is the app skeleton for [Fledge](https://github.com/webpatser/fledge-framework) — a drop-in replacement for Laravel's framework that uses PHP 8.5's native features for ~17% better performance.
+This is the app skeleton for [Fledge](https://github.com/webpatser/fledge-framework), a drop-in replacement for Laravel's framework that uses PHP 8.5's native features for ~17% better performance.
 
 ## Quick Start
 
@@ -14,16 +14,16 @@ php artisan serve
 
 ## What You Get
 
-A standard Laravel 13 application that uses `webpatser/fledge-framework` instead of `laravel/framework`. Everything works the same — same Artisan commands, same directory structure, same ecosystem compatibility. Just faster.
+A standard Laravel 13 application that uses `webpatser/fledge-framework` instead of `laravel/framework`. Everything works the same: same Artisan commands, same directory structure, same ecosystem compatibility. Just faster.
 
 Out of the box, Fledge includes:
 
-- **Non-blocking Database** via [`fledge-fiber-database`](https://github.com/webpatser/fledge-fiber-database) — Fiber-based MySQL, MariaDB, and PostgreSQL drivers with concurrent query support
-- **Non-blocking Redis** via [`fledge-fiber-redis`](https://github.com/webpatser/fledge-fiber-redis) — Fiber-based Redis for cache, session, queue, and lock operations
-- **Non-blocking HTTP** via [`fledge-fiber-http`](https://github.com/webpatser/fledge-fiber-http) — amphp-powered Guzzle handler replacing cURL
-- **Non-blocking DNS** — `active_url` validation uses amphp/dns; all fiber drivers resolve DNS asynchronously via amphp/socket
-- **Concurrent Middleware** — run independent middleware in parallel using fibers via `ConcurrentMiddlewareGroup`
-- **Fiber Queue Worker** via [`torque`](https://github.com/webpatser/torque) — concurrent job processing replacing Laravel Horizon
+- **Non-blocking Database** via [`fledge-fiber-database`](https://github.com/webpatser/fledge-fiber-database): Fiber-based MySQL, MariaDB, and PostgreSQL drivers with concurrent query support
+- **Non-blocking Redis** via [`fledge-fiber-redis`](https://github.com/webpatser/fledge-fiber-redis): Fiber-based Redis for cache, session, queue, and lock operations
+- **Non-blocking HTTP** via [`fledge-fiber-http`](https://github.com/webpatser/fledge-fiber-http): amphp-powered Guzzle handler replacing cURL
+- **Non-blocking DNS**: `active_url` validation uses amphp/dns; all fiber drivers resolve DNS asynchronously via amphp/socket
+- **Concurrent Middleware**: run independent middleware in parallel using fibers via `ConcurrentMiddlewareGroup`
+- **Fiber Queue Worker** via [`torque`](https://github.com/webpatser/torque): concurrent job processing replacing Laravel Horizon
 
 ### Fiber Database Drivers
 
@@ -45,7 +45,7 @@ Available drivers: `amphp-mysql`, `amphp-mariadb`, `amphp-pgsql`. Connection con
 
 ### Concurrent Middleware
 
-Run independent middleware in parallel using fibers. Middleware that implement `ConcurrentMiddleware` can be grouped and executed concurrently — ideal for middleware that perform independent I/O like Redis lookups, API key validation, or rate limit checks.
+Run independent middleware in parallel using fibers. Middleware that implement `ConcurrentMiddleware` can be grouped and executed concurrently, ideal for middleware that perform independent I/O like Redis lookups, API key validation, or rate limit checks.
 
 ```php
 // In your Kernel
