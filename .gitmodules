@@ -1,0 +1,4 @@
+[submodule "packages/framework"]
+	path = packages/framework
+	url = https://github.com/webpatser/fledge-framework.git
+	branch = fledge-13
