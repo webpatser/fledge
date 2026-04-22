@@ -29,6 +29,17 @@ It keeps the `Illuminate\` namespace for full package compatibility.
 | `clone($obj, [...])` | N/A | ⏭️ Skip - Requires constructor promotion (architectural constraint) |
 | `#[\NoDiscard]` | N/A | ⏭️ Skip - Not implemented |
 
+## Fledge Fiber (`webpatser/fledge-fiber`)
+
+Non-blocking async drivers for database, Redis, HTTP, and Livewire. Forked from amphp, modernized for PHP 8.5.
+
+- **Replaces** 18 amphp packages via composer `replace` — no `vendor/amphp/` directory
+- **Keeps `Amp\` namespace** — framework code (`FiberDriver.php`, `RedisStore.php`) works without changes
+- **Laravel integration** under `Fledge\Fiber\` namespace, auto-discovered via `FiberServiceProvider`
+- **Drivers:** `fledge-mysql`, `fledge-mariadb`, `fledge-pgsql` (database), `fledge` (redis), Guzzle handler (http)
+- **Config:** Set `DB_CONNECTION=fledge-mysql`, `REDIS_CLIENT=fledge` in `.env`
+- **Versioning:** `v13.x.y.z` — first 3 match Laravel, 4th is fledge-fiber patch
+
 ## Key Commands
 
 - `/sync-laravel` - Fetch latest Laravel and merge into Fledge

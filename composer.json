@@ -14,14 +14,16 @@
         {
             "type": "vcs",
             "url": "https://github.com/webpatser/fledge-framework"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/webpatser/fledge-fiber"
         }
     ],
     "require": {
         "php": "^8.5",
         "laravel/tinker": "^3.0",
-        "webpatser/fledge-fiber-database": "^13.3",
-        "webpatser/fledge-fiber-http": "^13.3",
-        "webpatser/fledge-fiber-redis": "^13.3",
+        "webpatser/fledge-fiber": "^13.3",
         "webpatser/fledge-framework": "*@dev"
     },
     "require-dev": {
