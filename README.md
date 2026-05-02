@@ -4,7 +4,7 @@
 
 This is the app skeleton for [Fledge](https://github.com/webpatser/fledge-framework), a drop-in replacement for Laravel's framework that uses PHP 8.5's native features for ~17% better performance.
 
-> Forked from [`laravel/laravel`](https://github.com/laravel/laravel). The pre-fork commit history is preserved on the [`legacy/laravel-history`](../../tree/legacy/laravel-history) branch.
+> Forked from [`laravel/laravel`](https://github.com/laravel/laravel) and rebased onto a clean history.
 
 ## Quick Start
 
