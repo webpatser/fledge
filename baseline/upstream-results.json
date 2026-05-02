@@ -1,0 +1,14 @@
+{
+    "php_version": "8.5.0",
+    "date": "2026-01-30T12:01:55+00:00",
+    "results": {
+        "Arr::first (no callback)": 0.0002838880000000001,
+        "Arr::first (with callback)": 0.173005681,
+        "Arr::last (no callback)": 0.00019181700000000057,
+        "Arr::last (with callback)": 0.2574657489999998,
+        "Collection::first()": 0.0003248889999999999,
+        "Collection::last()": 0.0002692770000000001,
+        "Collection::filter->map->first": 0.9308739799999998,
+        "Str pipeline": 0.012632310000000044
+    }
+}

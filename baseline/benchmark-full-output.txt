@@ -1,0 +1,177 @@
+=== FLEDGE COMPREHENSIVE BENCHMARK ===
+PHP Version: 8.5.0
+Date: 2026-01-30 09:50:14
+Iterations: 1000 (small: 100)
+============================================================
+
+## Support/Arr
+  Arr::first (no callback)                      0.0002 ms
+  Arr::first (with callback)                    0.1738 ms
+  Arr::last (no callback)                       0.0002 ms
+  Arr::last (with callback)                     0.2580 ms
+  Arr::get (dot notation)                       0.0009 ms
+  Arr::set (dot notation)                       0.0006 ms
+  Arr::has (dot notation)                       0.0006 ms
+  Arr::only                                     0.0003 ms
+  Arr::except                                   0.0006 ms
+  Arr::flatten                                  0.0007 ms
+  Arr::dot                                      0.0006 ms
+  Arr::undot                                    0.0010 ms
+  Arr::pluck                                    0.0012 ms
+  Arr::where                                    0.4101 ms
+  Arr::map                                      0.4914 ms
+
+## Support/Str
+  Str::of()->trim()->lower()->slug()            0.0151 ms
+  Str::camel                                    0.0002 ms
+  Str::snake                                    0.0002 ms
+  Str::studly                                   0.0002 ms
+  Str::kebab                                    0.0002 ms
+  Str::title                                    0.0006 ms
+  Str::slug                                     0.0040 ms
+  Str::uuid                                     0.0513 ms
+  Str::ulid                                     0.0077 ms
+  Str::random(32)                               0.0009 ms
+  Str::contains                                 0.0002 ms
+  Str::startsWith                               0.0002 ms
+  Str::endsWith                                 0.0002 ms
+  Str::before                                   0.0002 ms
+  Str::after                                    0.0002 ms
+  Str::replace                                  0.0002 ms
+  Str::replaceArray                             0.0005 ms
+  Str::limit                                    0.0003 ms
+  Str::words                                    0.0009 ms
+  Str::plural                                   0.0039 ms
+  Str::singular                                 0.0006 ms
+
+## Collections
+  Collection::first()                           0.0002 ms
+  Collection::last()                            0.0002 ms
+  Collection::filter()                          0.0408 ms
+  Collection::map()                             0.0551 ms
+  Collection::reduce()                          0.0844 ms
+  Collection::each()                            0.0789 ms
+  Collection::filter->map->first                0.0943 ms
+  Collection::pluck()                           0.0019 ms
+  Collection::where()                           0.0040 ms
+  Collection::groupBy()                         0.0034 ms
+  Collection::sortBy()                          0.2922 ms
+  Collection::unique()                          0.0008 ms
+  Collection::merge()                           0.0005 ms
+  Collection::combine()                         0.0007 ms
+  Collection::flip()                            0.0004 ms
+  Collection::keys()                            0.0004 ms
+  Collection::values()                          0.0004 ms
+  Collection::chunk(100)                        0.0118 ms
+  Collection::take(10)                          0.0004 ms
+  Collection::skip(10)                          0.0056 ms
+
+## LazyCollections
+  LazyCollection::first()                       0.0157 ms
+  LazyCollection::take(10)->all()               0.0161 ms
+  LazyCollection::filter->take->all             0.0249 ms
+
+## Container
+  Container::bind()                             0.0005 ms
+  Container::make() (bound)                     0.0021 ms
+  Container::make() (singleton)                 0.0005 ms
+  Container::make() (auto-resolve)              0.0022 ms
+
+## Pipeline
+  Pipeline (3 pipes)                            0.0020 ms
+  Pipeline (5 pipes)                            0.0028 ms
+
+## Events
+  Events::dispatch()                            0.0012 ms
+  Events::listen() + dispatch()                 0.0014 ms
+
+## Config
+  Config::get()                                 0.0009 ms
+  Config::get() (nested)                        0.0013 ms
+  Config::set()                                 0.0005 ms
+  Config::has()                                 0.0008 ms
+  Config::all()                                 0.0001 ms
+
+## Cache
+  Cache::put()                                  0.0157 ms
+  Cache::get()                                  0.0031 ms
+  Cache::has()                                  0.0027 ms
+  Cache::forget()                               0.0010 ms
+  Cache::remember()                             0.0030 ms
+
+## Validation
+  Validation (simple)                           0.1236 ms
+  Validation (complex)                          0.1595 ms
+
+## Encryption
+  Encrypt (string)                              0.0047 ms
+  Decrypt (string)                              0.0056 ms
+  Encrypt (array)                               0.0044 ms
+
+## Hashing
+  Bcrypt::make()                                0.8743 ms
+  Bcrypt::check()                               0.8988 ms
+
+## Http/Request
+  Request::create()                             0.0043 ms
+  Request::input()                              0.0012 ms
+  Request::all()                                0.0011 ms
+  Request::only()                               0.0019 ms
+  Request::except()                             0.0014 ms
+  Request::has()                                0.0014 ms
+  Request::merge()                              0.0033 ms
+
+## Pagination
+  Paginator::create                             0.0017 ms
+  LengthAwarePaginator::create                  0.0009 ms
+
+## Support/Fluent
+  Fluent::create                                0.0004 ms
+  Fluent::get()                                 0.0005 ms
+  Fluent::toArray()                             0.0001 ms
+
+## Filesystem
+  Filesystem::put()                             0.1631 ms
+  Filesystem::get()                             0.0225 ms
+  Filesystem::exists()                          0.0026 ms
+  Filesystem::delete()                          0.2684 ms
+
+## Support/Carbon
+  Carbon::now()                                 0.0013 ms
+  Carbon::parse()                               0.0020 ms
+  Carbon::create()                              0.0044 ms
+  Carbon::addDays()                             0.0073 ms
+  Carbon::diffForHumans()                       0.1123 ms
+  Carbon::format()                              0.0008 ms
+  Carbon::isoFormat()                           0.0685 ms
+
+
+============================================================
+SUMMARY - Total benchmarks: 107
+============================================================
+
+Top 10 Slowest Operations:
+  Bcrypt::check()                               0.8988 ms
+  Bcrypt::make()                                0.8743 ms
+  Arr::map                                      0.4914 ms
+  Arr::where                                    0.4101 ms
+  Collection::sortBy()                          0.2922 ms
+  Filesystem::delete()                          0.2684 ms
+  Arr::last (with callback)                     0.2580 ms
+  Arr::first (with callback)                    0.1738 ms
+  Filesystem::put()                             0.1631 ms
+  Validation (complex)                          0.1595 ms
+
+Top 10 Fastest Operations:
+  Fluent::toArray()                             0.0001 ms
+  Config::all()                                 0.0001 ms
+  Str::studly                                   0.0002 ms
+  Str::before                                   0.0002 ms
+  Arr::last (no callback)                       0.0002 ms
+  Str::snake                                    0.0002 ms
+  Collection::last()                            0.0002 ms
+  Str::startsWith                               0.0002 ms
+  Str::kebab                                    0.0002 ms
+  Str::replace                                  0.0002 ms
+
+Results saved to benchmark-full-results.json

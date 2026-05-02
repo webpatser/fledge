@@ -1,0 +1,5 @@
+PHP 8.5.0 (cli) (built: Nov 20 2025 12:51:52) (NTS clang 15.0.0)
+Copyright (c) The PHP Group
+Built by Laravel Herd
+Zend Engine v4.5.0, Copyright (c) Zend Technologies
+    with Zend OPcache v8.5.0, Copyright (c), by Zend Technologies
