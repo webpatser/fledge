@@ -2,6 +2,8 @@
 
 ## [Unreleased](https://github.com/webpatser/fledge/compare/v13.1.2.1...master)
 
+* Sync with Laravel skeleton v13.5.0 (Vite font plugin already integrated, CHANGELOG bump)
+* Bump `packages/framework` to v13.8.0.1 (Laravel framework v13.8.0 sync; adds Worker Pausing/Resuming events, all* queue inspection methods, SortDirection enum support)
 * Sync with Laravel skeleton 13.x HEAD (post-v13.4.0; Vite font plugin, CHANGELOG)
 * Bump `packages/framework` to v13.7.0.4 (adds `schedule:terminate` for graceful schedule:work daemon reload)
 * Sync with Laravel skeleton v13.4.0 (upstream changes from v13.3.0 through v13.4.0, squashed)
@@ -16,6 +18,10 @@
 * Align PHPUnit constraint with laravel/framework (`^11.5.50 || ^12.5.8 || ^13.0.3`)
 
 ## Upstream (Laravel skeleton) releases
+
+### [v13.5.0](https://github.com/laravel/laravel/compare/v13.4.0...v13.5.0) - 2026-05-05
+
+* Use Vite font plugin for application fonts by [@joetannenbaum](https://github.com/joetannenbaum) in https://github.com/laravel/laravel/pull/6806
 
 ### [v13.4.0](https://github.com/laravel/laravel/compare/v13.3.0...v13.4.0) - 2026-04-28
 
