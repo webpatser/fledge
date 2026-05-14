@@ -2,6 +2,8 @@
 
 ## [Unreleased](https://github.com/webpatser/fledge/compare/v13.1.2.1...master)
 
+* Sync with Laravel skeleton v13.6.0 (`failed_jobs` table: `connection`/`queue` columns `text` to `string`, composite `connection, queue, failed_at` index)
+* Bump `packages/framework` to v13.9.0.1 (Laravel framework v13.9.0 sync; adds Cloud queue integration, Concurrency `Driver::run()` timeout parameter, `Worker::$timedOutExitCode`)
 * Sync with Laravel skeleton v13.5.0 (Vite font plugin already integrated, CHANGELOG bump)
 * Bump `packages/framework` to v13.8.0.1 (Laravel framework v13.8.0 sync; adds Worker Pausing/Resuming events, all* queue inspection methods, SortDirection enum support)
 * Sync with Laravel skeleton 13.x HEAD (post-v13.4.0; Vite font plugin, CHANGELOG)
@@ -18,6 +20,12 @@
 * Align PHPUnit constraint with laravel/framework (`^11.5.50 || ^12.5.8 || ^13.0.3`)
 
 ## Upstream (Laravel skeleton) releases
+
+### [v13.6.0](https://github.com/laravel/laravel/compare/v13.5.0...v13.6.0) - 2026-05-14
+
+* `failed_jobs` table: `connection` and `queue` columns changed from `text` to `string`, added composite index on `connection, queue, failed_at`
+* MySQL SSL config simplified to use `Mysql::ATTR_SSL_CA` directly (already present in Fledge)
+* `laravel/framework` constraint bumped to `^13.8` (not applicable to Fledge; skeleton uses `webpatser/fledge-framework`)
 
 ### [v13.5.0](https://github.com/laravel/laravel/compare/v13.4.0...v13.5.0) - 2026-05-05
 
