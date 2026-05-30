@@ -2,6 +2,8 @@
 
 ## [Unreleased](https://github.com/webpatser/fledge/compare/v13.1.2.1...master)
 
+* Sync with Laravel skeleton v13.8.0 (`bootstrap/app.php`: render JSON exceptions for `api/*` requests via `shouldRenderJsonWhen`; `resources/css/app.css`: drop the now-redundant `../**/*.blade.php` and `../**/*.js` `@source` globs)
+* Bump `packages/framework` to v13.12.0.1 (Laravel framework v13.12.0 sync; array-based HTTP retry delays, `Worker::$stopOnLostConnection`, scheduled-event `withAttributes()`, Redis host-scheme validation)
 * Sync with Laravel skeleton v13.6.0 (`failed_jobs` table: `connection`/`queue` columns `text` to `string`, composite `connection, queue, failed_at` index)
 * Bump `packages/framework` to v13.9.0.1 (Laravel framework v13.9.0 sync; adds Cloud queue integration, Concurrency `Driver::run()` timeout parameter, `Worker::$timedOutExitCode`)
 * Sync with Laravel skeleton v13.5.0 (Vite font plugin already integrated, CHANGELOG bump)
