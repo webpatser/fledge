@@ -2,6 +2,8 @@
 
 ## [Unreleased](https://github.com/webpatser/fledge/compare/v13.1.2.1...master)
 
+* Sync with Laravel skeleton v13.10.0 (`config/logging.php` documents the `monthly` driver; `storage/framework/.gitignore` ignores `lsp-*.php`)
+* Bump `packages/framework` to v13.26.1.2 (Laravel framework v13.26.1 sync; Guzzle 8 support, PhpRedis command retries, worker queue pause/resume events, read-through filesystem driver, process idle timeouts)
 * Sync with Laravel skeleton v13.9.0 (`composer dev` now runs the new `php artisan dev` command; `bootstrap/app.php` renders JSON exceptions when the request `expectsJson()`; `config/logging.php` daily channel `days` renamed to `max_files`, new `monthly` channel; dependabot with auto-merge workflow)
 * Bump `packages/framework` to v13.25.0.1 (Laravel framework v13.25.0 sync; `artisan dev` command via `DevCommandMode`, queue pause/resume events, `Http::withoutGlobalConfiguration()`, SQS enum queue names, image `dimensions()`)
 * Sync with Laravel skeleton v13.8.0 (`bootstrap/app.php`: render JSON exceptions for `api/*` requests via `shouldRenderJsonWhen`; `resources/css/app.css`: drop the now-redundant `../**/*.blade.php` and `../**/*.js` `@source` globs)
