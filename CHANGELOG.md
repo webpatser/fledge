@@ -2,6 +2,8 @@
 
 ## [Unreleased](https://github.com/webpatser/fledge/compare/v13.1.2.1...master)
 
+* Sync with Laravel skeleton v13.10.1 (upstream only adds `AGENTS.md`/`CLAUDE.md` agent-guideline files, intentionally not adopted; changelog housekeeping)
+* Bump `packages/framework` to v13.29.0.2 (Laravel framework v13.29.0 sync; AWS credential cache for SQS, `Model::refreshForUpdate()`, `NotificationSkipped` event, `AsVector` cast, query-binding masking in `QueryException`, Postgres keepalive options)
 * Sync with Laravel skeleton v13.10.0 (`config/logging.php` documents the `monthly` driver; `storage/framework/.gitignore` ignores `lsp-*.php`)
 * Bump `packages/framework` to v13.26.1.2 (Laravel framework v13.26.1 sync; Guzzle 8 support, PhpRedis command retries, worker queue pause/resume events, read-through filesystem driver, process idle timeouts)
 * Sync with Laravel skeleton v13.9.0 (`composer dev` now runs the new `php artisan dev` command; `bootstrap/app.php` renders JSON exceptions when the request `expectsJson()`; `config/logging.php` daily channel `days` renamed to `max_files`, new `monthly` channel; dependabot with auto-merge workflow)
