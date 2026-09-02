@@ -2,6 +2,7 @@
 
 ## [Unreleased](https://github.com/webpatser/fledge/compare/v13.1.2.1...master)
 
+* Bump `packages/framework` to v13.30.1.2 (Laravel framework v13.30.1 sync; queue worker stop reasons in `queue:work` output, `DevCommands` vendor/default opt-outs, SQL Server DSN connection strings, `Storage::path()` disk-root confinement, `Collection::chunkBy()`, `dropVectorIndex()`)
 * Sync with Laravel skeleton v13.10.1 (upstream only adds `AGENTS.md`/`CLAUDE.md` agent-guideline files, intentionally not adopted; changelog housekeeping)
 * Bump `packages/framework` to v13.29.0.2 (Laravel framework v13.29.0 sync; AWS credential cache for SQS, `Model::refreshForUpdate()`, `NotificationSkipped` event, `AsVector` cast, query-binding masking in `QueryException`, Postgres keepalive options)
 * Sync with Laravel skeleton v13.10.0 (`config/logging.php` documents the `monthly` driver; `storage/framework/.gitignore` ignores `lsp-*.php`)
