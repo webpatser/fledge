@@ -2,6 +2,7 @@
 
 ## [Unreleased](https://github.com/webpatser/fledge/compare/v13.1.2.1...master)
 
+* Bump `packages/framework` to v13.32.0.2 (Laravel framework v13.32.0 sync; Mercure broadcast driver, enums in queue pause/resume, exception passed to Eloquent violation callbacks, `copyToDisk()`/`moveToDisk()`, Redis tagged cache `touch()` TTL sync; PHP 8.5 rewrites in `MercureBroadcaster::auth()`, `Schema\Builder::hasIndex()` and `EnvironmentEncryptCommand`)
 * Bump `packages/framework` to v13.31.0.2 (Laravel framework v13.31.0 sync; queue `totalSize()` on every driver, `JobInterrupted` event from the worker signal path, cluster-safe Redis queue `bulk()`, pivot inverse relations, `Connection::getName()` direct read/write suffix; PHP 8.5 rewrites in `AssertableJsonString`, `SupportsPivotInverseRelations` and `RedisQueue::scanQueueKeys()`)
 * Bump `packages/framework` to v13.30.1.2 (Laravel framework v13.30.1 sync; queue worker stop reasons in `queue:work` output, `DevCommands` vendor/default opt-outs, SQL Server DSN connection strings, `Storage::path()` disk-root confinement, `Collection::chunkBy()`, `dropVectorIndex()`)
 * Sync with Laravel skeleton v13.10.1 (upstream only adds `AGENTS.md`/`CLAUDE.md` agent-guideline files, intentionally not adopted; changelog housekeeping)
