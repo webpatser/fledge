@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8b50066b95436a54ee1d272867804115",
+    "content-hash": "d4be5249fcba5b8795defc84108f0b6a",
     "packages": [
         {
             "name": "brick/math",
@@ -5828,16 +5828,16 @@
         },
         {
             "name": "webpatser/fledge-fiber",
-            "version": "v13.26.1.2",
+            "version": "v13.35.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webpatser/fledge-fiber.git",
-                "reference": "52b998a2fa0172e3af648df38101e29fff941c49"
+                "reference": "dfd3303288fe062c38a4111d3ae3622f24544e4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webpatser/fledge-fiber/zipball/52b998a2fa0172e3af648df38101e29fff941c49",
-                "reference": "52b998a2fa0172e3af648df38101e29fff941c49",
+                "url": "https://api.github.com/repos/webpatser/fledge-fiber/zipball/dfd3303288fe062c38a4111d3ae3622f24544e4c",
+                "reference": "dfd3303288fe062c38a4111d3ae3622f24544e4c",
                 "shasum": ""
             },
             "require": {
@@ -5965,21 +5965,21 @@
                 "websocket"
             ],
             "support": {
-                "source": "https://github.com/webpatser/fledge-fiber/tree/v13.26.1.2",
+                "source": "https://github.com/webpatser/fledge-fiber/tree/v13.35.0.1",
                 "issues": "https://github.com/webpatser/fledge-fiber/issues"
             },
-            "time": "2026-08-23T09:09:16+00:00"
+            "time": "2026-10-07T11:01:32+00:00"
         },
         {
             "name": "webpatser/fledge-framework",
-            "version": "13.x-dev",
+            "version": "v13.35.0.2",
             "dist": {
                 "type": "path",
                 "url": "packages/framework",
-                "reference": "88e69b0cb2d6628f532cd7d7cd0969c60c5e13b2"
+                "reference": "c42c4dc344b425a90235b80a0368ef0d442bedcb"
             },
             "require": {
-                "brick/math": "^0.14.2 || ^0.15 || ^0.16 || ^0.17 || ^0.18 || ^0.19",
+                "brick/math": "^0.14.2 || ^0.15 || ^0.16 || ^0.17 || ^0.18 || ^0.19 || ^0.20 || ^1.0",
                 "composer-runtime-api": "^2.2",
                 "doctrine/inflector": "^2.0.5",
                 "dragonmantank/cron-expression": "^3.4",
@@ -6092,18 +6092,20 @@
                 "league/flysystem-sftp-v3": "^3.25.1",
                 "mockery/mockery": "^1.6.10 <1.6.13",
                 "opis/json-schema": "^2.4.1",
-                "orchestra/testbench-core": "^11.0.0",
+                "orchestra/testbench-core": "^11.5.0",
                 "pda/pheanstalk": "^7.0.0 || ^8.0.0",
                 "php-http/discovery": "^1.15",
-                "phpstan/phpstan": "^2.0",
+                "phpstan/phpstan": "2.2.15",
                 "phpunit/phpunit": "^12.5.23 || ^13.1.7",
                 "predis/predis": "^2.3 || ^3.0",
-                "rector/rector": "^2.3",
+                "rector/rector": "2.6.3",
                 "resend/resend-php": "^1.0",
                 "symfony/cache": "^7.4.0 || ^8.0.0",
                 "symfony/http-client": "^7.4.0 || ^8.0.0",
+                "symfony/mercure": "^0.8.0",
                 "symfony/psr-http-message-bridge": "^7.4.0 || ^8.0.0",
-                "symfony/translation": "^7.4.0 || ^8.0.0"
+                "symfony/translation": "^7.4.0 || ^8.0.0",
+                "web-token/jwt-library": "^4.1"
             },
             "suggest": {
                 "ably/ably-php": "Required to use the Ably broadcast driver (^1.0).",
@@ -6138,8 +6140,10 @@
                 "symfony/filesystem": "Required to enable support for relative symbolic links (^7.4 || ^8.0).",
                 "symfony/http-client": "Required to enable support for the Symfony API mail transports (^7.4 || ^8.0).",
                 "symfony/mailgun-mailer": "Required to enable support for the Mailgun mail transport (^7.4 || ^8.0).",
+                "symfony/mercure": "Required to use the Mercure broadcast driver (^0.8).",
                 "symfony/postmark-mailer": "Required to enable support for the Postmark mail transport (^7.4 || ^8.0).",
                 "symfony/psr-http-message-bridge": "Required to use PSR-7 bridging features (^7.4 || ^8.0).",
+                "web-token/jwt-library": "Required to sign Mercure JWTs and use end-to-end encrypted channels (^4.1).",
                 "webpatser/fledge-fiber-database": "Non-blocking Fiber-based MySQL, MariaDB, and PostgreSQL drivers (^13.4).",
                 "webpatser/fledge-fiber-http": "Non-blocking Fiber-based HTTP handler replacing cURL (^13.4).",
                 "webpatser/fledge-fiber-redis": "Non-blocking Fiber-based Redis driver (^13.4).",
@@ -6184,7 +6188,7 @@
                     "Illuminate\\Tests\\": "tests/"
                 },
                 "files": [
-                    "tests/Database/stubs/MigrationCreatorFakeMigration.php"
+                    "tests/Database/Fixtures/MigrationCreatorFakeMigration.php"
                 ]
             },
             "license": [

@@ -24,7 +24,7 @@
         "php": "^8.5",
         "laravel/tinker": "^3.0",
         "symfony/polyfill-php86": "^1.37",
-        "webpatser/fledge-fiber": "^13.3",
+        "webpatser/fledge-fiber": "^13.35.0.1",
         "webpatser/fledge-framework": "*@dev"
     },
     "require-dev": {
