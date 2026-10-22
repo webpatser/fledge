@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d4be5249fcba5b8795defc84108f0b6a",
+    "content-hash": "0ea4e9f414bc8f3c8033425af2548ef0",
     "packages": [
         {
             "name": "brick/math",
@@ -1158,16 +1158,16 @@
         },
         {
             "name": "laravel/prompts",
-            "version": "v0.3.23",
+            "version": "v0.3.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/prompts.git",
-                "reference": "b7b4c35e5bc47450f6b6238c6cc9c47ba19b2221"
+                "reference": "2d1e9bf6bab8d3f383c254db7f2b4ea8816d55e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/prompts/zipball/b7b4c35e5bc47450f6b6238c6cc9c47ba19b2221",
-                "reference": "b7b4c35e5bc47450f6b6238c6cc9c47ba19b2221",
+                "url": "https://api.github.com/repos/laravel/prompts/zipball/2d1e9bf6bab8d3f383c254db7f2b4ea8816d55e0",
+                "reference": "2d1e9bf6bab8d3f383c254db7f2b4ea8816d55e0",
                 "shasum": ""
             },
             "require": {
@@ -1210,10 +1210,9 @@
             ],
             "description": "Add beautiful and user-friendly forms to your command-line applications.",
             "support": {
-                "issues": "https://github.com/laravel/prompts/issues",
-                "source": "https://github.com/laravel/prompts/tree/v0.3.23"
+                "source": "https://github.com/laravel/prompts/tree/v0.3.26"
             },
-            "time": "2026-08-11T18:58:24+00:00"
+            "time": "2026-10-09T14:45:13+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -1347,16 +1346,16 @@
         },
         {
             "name": "league/commonmark",
-            "version": "2.10.0",
+            "version": "2.10.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "d2d1aa8b35e072966c89bc0c66cf926e56767dc4"
+                "reference": "40821b7606d8d946bac57dbd2290076c722e3a65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/d2d1aa8b35e072966c89bc0c66cf926e56767dc4",
-                "reference": "d2d1aa8b35e072966c89bc0c66cf926e56767dc4",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/40821b7606d8d946bac57dbd2290076c722e3a65",
+                "reference": "40821b7606d8d946bac57dbd2290076c722e3a65",
                 "shasum": ""
             },
             "require": {
@@ -1450,7 +1449,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-08-11T16:06:25+00:00"
+            "time": "2026-10-17T19:59:50+00:00"
         },
         {
             "name": "league/config",
@@ -3841,16 +3840,16 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v8.1.5",
+            "version": "v8.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "ee16f97e95cfa011a742714d7c8c8f70fe7423f4"
+                "reference": "7850897fb8659f98491b03be79ac48600bdaf9ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/ee16f97e95cfa011a742714d7c8c8f70fe7423f4",
-                "reference": "ee16f97e95cfa011a742714d7c8c8f70fe7423f4",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/7850897fb8659f98491b03be79ac48600bdaf9ab",
+                "reference": "7850897fb8659f98491b03be79ac48600bdaf9ab",
                 "shasum": ""
             },
             "require": {
@@ -3898,7 +3897,7 @@
             "description": "Defines an object-oriented layer for the HTTP specification",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-foundation/tree/v8.1.5"
+                "source": "https://github.com/symfony/http-foundation/tree/v8.1.9"
             },
             "funding": [
                 {
@@ -3918,7 +3917,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-08-20T09:59:12+00:00"
+            "time": "2026-10-08T16:57:43+00:00"
         },
         {
             "name": "symfony/http-kernel",
@@ -5828,16 +5827,16 @@
         },
         {
             "name": "webpatser/fledge-fiber",
-            "version": "v13.35.0.1",
+            "version": "v13.38.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webpatser/fledge-fiber.git",
-                "reference": "dfd3303288fe062c38a4111d3ae3622f24544e4c"
+                "reference": "b970a3348f9c0163a3377cc0938db6817bcf69c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webpatser/fledge-fiber/zipball/dfd3303288fe062c38a4111d3ae3622f24544e4c",
-                "reference": "dfd3303288fe062c38a4111d3ae3622f24544e4c",
+                "url": "https://api.github.com/repos/webpatser/fledge-fiber/zipball/b970a3348f9c0163a3377cc0938db6817bcf69c8",
+                "reference": "b970a3348f9c0163a3377cc0938db6817bcf69c8",
                 "shasum": ""
             },
             "require": {
@@ -5856,14 +5855,25 @@
                 "revolt/event-loop": "^1.0"
             },
             "require-dev": {
+                "aws/aws-sdk-php": "^3.300",
+                "illuminate/broadcasting": "^13.0",
+                "illuminate/mail": "^13.0",
+                "league/flysystem-aws-s3-v3": "^3.0",
                 "livewire/livewire": "^4.2",
                 "mockery/mockery": "^1.6",
+                "pdphilip/elasticsearch": "^5.0",
                 "pestphp/pest": "^4.0",
-                "phpunit/phpunit": "^11.0 || ^12.0 || ^13.0"
+                "phpoption/phpoption": "^1.9",
+                "phpunit/phpunit": "^11.0 || ^12.0 || ^13.0",
+                "pusher/pusher-php-server": "^7.2",
+                "symfony/http-client": "^7.4 || ^8.0",
+                "symfony/postmark-mailer": "^7.4 || ^8.0",
+                "vlucas/phpdotenv": "^5.6"
             },
             "suggest": {
                 "ext-resp3": "Install the resp3 PECL extension via PIE (`pie install webpatser/php-resp3`) for faster RESP parsing on cache-heavy workloads; SocketRedisConnection picks it up automatically when loaded.",
-                "livewire/livewire": "Required for concurrent Livewire component updates (^4.2)"
+                "livewire/livewire": "Required for concurrent Livewire component updates (^4.2)",
+                "symfony/http-client": "Required for FledgeSymfonyHttpClient, which runs Symfony HTTP consumers such as the mailer's API transports on the Fledge loop (^7.4 || ^8.0)"
             },
             "type": "library",
             "extra": {
@@ -5965,18 +5975,24 @@
                 "websocket"
             ],
             "support": {
-                "source": "https://github.com/webpatser/fledge-fiber/tree/v13.35.0.1",
+                "source": "https://github.com/webpatser/fledge-fiber/tree/v13.38.0.0",
                 "issues": "https://github.com/webpatser/fledge-fiber/issues"
             },
-            "time": "2026-10-07T11:01:32+00:00"
+            "time": "2026-10-21T17:52:09+00:00"
         },
         {
             "name": "webpatser/fledge-framework",
-            "version": "v13.35.0.2",
+            "version": "v13.38.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webpatser/fledge-framework.git",
+                "reference": "2eae857baf7fbea7a9882aaf4da1017190e9d86e"
+            },
             "dist": {
-                "type": "path",
-                "url": "packages/framework",
-                "reference": "c42c4dc344b425a90235b80a0368ef0d442bedcb"
+                "type": "zip",
+                "url": "https://api.github.com/repos/webpatser/fledge-framework/zipball/2eae857baf7fbea7a9882aaf4da1017190e9d86e",
+                "reference": "2eae857baf7fbea7a9882aaf4da1017190e9d86e",
+                "shasum": ""
             },
             "require": {
                 "brick/math": "^0.14.2 || ^0.15 || ^0.16 || ^0.17 || ^0.18 || ^0.19 || ^0.20 || ^1.0",
@@ -5996,7 +6012,7 @@
                 "guzzlehttp/promises": "^2.0.3 || ^3.0",
                 "guzzlehttp/psr7": "^2.9 || ^3.0",
                 "guzzlehttp/uri-template": "^1.0 || ^2.0",
-                "laravel/prompts": "^0.3.11",
+                "laravel/prompts": "^0.3.25",
                 "laravel/serializable-closure": "^2.0.10",
                 "league/commonmark": "^2.8.1",
                 "league/flysystem": "^3.25.1",
@@ -6082,7 +6098,7 @@
                 "aws/aws-sdk-php": "^3.322.9",
                 "ext-gmp": "*",
                 "fakerphp/faker": "^1.24",
-                "intervention/image": "^4.0",
+                "intervention/image": "^4.2",
                 "laravel/pao": "^1.0.6",
                 "laravel/pint": "^1.18",
                 "league/flysystem-aws-s3-v3": "^3.25.1",
@@ -6092,10 +6108,10 @@
                 "league/flysystem-sftp-v3": "^3.25.1",
                 "mockery/mockery": "^1.6.10 <1.6.13",
                 "opis/json-schema": "^2.4.1",
-                "orchestra/testbench-core": "^11.5.0",
+                "orchestra/testbench-core": "^11.6.0",
                 "pda/pheanstalk": "^7.0.0 || ^8.0.0",
                 "php-http/discovery": "^1.15",
-                "phpstan/phpstan": "2.2.15",
+                "phpstan/phpstan": "2.3.1",
                 "phpunit/phpunit": "^12.5.23 || ^13.1.7",
                 "predis/predis": "^2.3 || ^3.0",
                 "rector/rector": "2.6.3",
@@ -6122,7 +6138,7 @@
                 "ext-redis": "Required to use the Redis cache and queue drivers (^4.0 || ^5.0 || ^6.0).",
                 "fakerphp/faker": "Required to generate fake data using the fake() helper (^1.23).",
                 "filp/whoops": "Required for friendly error pages in development (^2.14.3).",
-                "intervention/image": "Required to use the image processing features (^4.0).",
+                "intervention/image": "Required to use the image processing features (^4.2).",
                 "laravel/tinker": "Required to use the tinker console command (^2.0).",
                 "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (^3.25.1).",
                 "league/flysystem-ftp": "Required to use the Flysystem FTP driver (^3.25.1).",
@@ -6214,9 +6230,7 @@
                 "issues": "https://github.com/webpatser/fledge-framework/issues",
                 "source": "https://github.com/webpatser/fledge-framework"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-21T16:56:43+00:00"
         },
         {
             "name": "webpatser/fledge-portable-ascii",
@@ -8732,9 +8746,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "webpatser/fledge-framework": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
