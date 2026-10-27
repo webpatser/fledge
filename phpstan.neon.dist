@@ -1,0 +1,17 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    level: 8
+    paths:
+        - app
+        - config
+        - database
+        - routes
+    ignoreErrors:
+        # Keeps config/filesystems.php byte-identical to the upstream laravel/laravel skeleton
+        # (env() returns mixed, so rtrim() trips argument.type without a cast).
+        -
+            identifier: argument.type
+            path: config/filesystems.php
+            count: 1
