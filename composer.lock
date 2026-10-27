@@ -5982,16 +5982,16 @@
         },
         {
             "name": "webpatser/fledge-framework",
-            "version": "v13.38.0.1",
+            "version": "v13.38.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webpatser/fledge-framework.git",
-                "reference": "2eae857baf7fbea7a9882aaf4da1017190e9d86e"
+                "reference": "bd18d44109232b8c7794be1f57c970229d829e9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webpatser/fledge-framework/zipball/2eae857baf7fbea7a9882aaf4da1017190e9d86e",
-                "reference": "2eae857baf7fbea7a9882aaf4da1017190e9d86e",
+                "url": "https://api.github.com/repos/webpatser/fledge-framework/zipball/bd18d44109232b8c7794be1f57c970229d829e9e",
+                "reference": "bd18d44109232b8c7794be1f57c970229d829e9e",
                 "shasum": ""
             },
             "require": {
@@ -6041,7 +6041,7 @@
                 "symfony/var-dumper": "^7.4.0 || ^8.0.0",
                 "tijsverkoyen/css-to-inline-styles": "^2.2.5",
                 "vlucas/phpdotenv": "^5.6.1",
-                "webpatser/fledge-fiber": "^13.4",
+                "webpatser/fledge-fiber": "^13.38",
                 "webpatser/fledge-portable-ascii": "^1.0"
             },
             "conflict": {
@@ -6207,6 +6207,11 @@
                     "tests/Database/Fixtures/MigrationCreatorFakeMigration.php"
                 ]
             },
+            "scripts": {
+                "analyse:fledge": [
+                    "phpstan analyse -c phpstan.fledge.neon.dist --memory-limit=1G"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -6230,7 +6235,7 @@
                 "issues": "https://github.com/webpatser/fledge-framework/issues",
                 "source": "https://github.com/webpatser/fledge-framework"
             },
-            "time": "2026-10-21T16:56:43+00:00"
+            "time": "2026-10-27T12:51:17+00:00"
         },
         {
             "name": "webpatser/fledge-portable-ascii",
