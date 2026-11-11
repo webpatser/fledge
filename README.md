@@ -23,7 +23,7 @@ After install, verify you are running Fledge and not stock Laravel:
 
 ```bash
 bash vendor/webpatser/fledge-framework/bin/verify-fledge-install.sh
-# OK   running Fledge framework v13.7.0.4
+# OK   running Fledge framework v13.42.0.2
 ```
 
 ## What You Get
@@ -32,7 +32,7 @@ A standard Laravel 13 application that uses `webpatser/fledge-framework` instead
 
 Out of the box, Fledge includes:
 
-- **Non-blocking I/O** via [`fledge-fiber`](https://github.com/webpatser/fledge-fiber): one Fiber-based async runtime covering Redis (cache, session, queue, locks), MySQL/MariaDB/PostgreSQL drivers, HTTP client and server, DNS resolution, and concurrency primitives. Previously split across `fledge-fiber-database`, `-redis`, and `-http`, now consolidated into a single package.
+- **Non-blocking I/O** via [`fledge-fiber`](https://github.com/webpatser/fledge-fiber): one Fiber-based async runtime covering Redis (cache, session, queue, locks), MySQL/MariaDB/PostgreSQL drivers, HTTP client and server, DNS resolution, and concurrency primitives.
 - **Concurrent Middleware**: run independent middleware in parallel using fibers via `ConcurrentMiddlewareGroup`.
 - **Fiber Queue Worker** via [`torque`](https://github.com/webpatser/torque): concurrent job processing, a Horizon replacement.
 
