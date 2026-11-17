@@ -2,6 +2,10 @@
 
 ## [Unreleased](https://github.com/webpatser/fledge/compare/v13.1.2.1...master)
 
+* Fix the shipped fiber DB connections: rename `amphp-mysql`, `amphp-mariadb` and `amphp-pgsql` (connections and drivers) to `fledge-mysql`, `fledge-mariadb` and `fledge-pgsql`, the drivers `fledge-fiber` registers. Existing apps must rename theirs and update `DB_CONNECTION`.
+* Remove `url` from the fiber connections: `DB_URL` would replace their driver with the URL scheme and make them blocking PDO connections. Use `DB_HOST`, `DB_PORT`, `DB_DATABASE`, `DB_USERNAME` and `DB_PASSWORD` for them.
+* Default `REDIS_CLIENT` is now `fledge` (was `amphp`, which has no connector). Existing apps with `REDIS_CLIENT=amphp` must switch to `fledge` or `phpredis`.
+
 * Sync with Laravel skeleton v13.11.0, framework v13.35.0.2
 * Bump `packages/framework` to v13.33.0.2 (Laravel framework v13.33.0 sync; opt-out of killing the worker on job timeout, `brick/math` 0.20/1.0 support, Postgres connection `server_options`, enum key fix in tagged cache `many()`/`get()`; PHP 8.5 rewrites in `MemoizedTaggedCache::many()`, `FailedJobProvider::failedJobsIterator()`, `Queue\Worker`, `FormRequest::nearestClassWithAttribute()`, `PhpRedisConnection::causedByLostConnection()`, `PostgresConnector::getDsn()` and `PredisConnection`)
 * Bump `packages/framework` to v13.32.0.2 (Laravel framework v13.32.0 sync; Mercure broadcast driver, enums in queue pause/resume, exception passed to Eloquent violation callbacks, `copyToDisk()`/`moveToDisk()`, Redis tagged cache `touch()` TTL sync; PHP 8.5 rewrites in `MercureBroadcaster::auth()`, `Schema\Builder::hasIndex()` and `EnvironmentEncryptCommand`)

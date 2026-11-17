@@ -73,7 +73,25 @@ use Fledge\Fiber\Database\FiberDB;
 );
 ```
 
-Available drivers: `fledge-mysql`, `fledge-mariadb`, `fledge-pgsql`. Connection config is preconfigured in `config/database.php`.
+Available connections: `fledge-mysql`, `fledge-mariadb`, `fledge-pgsql`, preconfigured in `config/database.php` with the same `DB_*` variables as the stock connections, except `DB_URL`. The fiber connections deliberately have no `url` key: Laravel's URL parser replaces the connection's `driver` with the URL scheme, so a `mysql://` URL would silently turn them into blocking PDO connections. Set `DB_HOST`, `DB_PORT`, `DB_DATABASE`, `DB_USERNAME` and `DB_PASSWORD` instead. `fledge-fiber` also registers `fledge-mysql-native` and `fledge-mariadb-native` drivers; add a connection with one of those as `driver` to use them.
+
+### Redis Client
+
+The default Redis client is `fledge` (`REDIS_CLIENT=fledge` in `.env.example`, and the fallback in `config/database.php` when `REDIS_CLIENT` is unset). It is the non-blocking client from `fledge-fiber`, so cache, session, queue and lock traffic suspends the current Fiber instead of blocking the process. Stock Laravel defaults to `phpredis`; Fledge defaults to `fledge` because that is the client the Fiber runtime is built around.
+
+To use the `phpredis` extension instead, install it and set:
+
+```dotenv
+REDIS_CLIENT=phpredis
+```
+
+### Upgrading an Existing Fledge App
+
+Earlier versions of this skeleton shipped config that no Fledge package registers. If your app was created from one of them:
+
+- Rename the `amphp-mysql`, `amphp-mariadb` and `amphp-pgsql` connections in `config/database.php`, and their `driver` values, to `fledge-mysql`, `fledge-mariadb` and `fledge-pgsql`. Update `DB_CONNECTION` and any `DB::connection('amphp-...')` calls to match.
+- `REDIS_CLIENT=amphp` (also the old fallback in `config/database.php`) has no connector. Change it to `fledge`, or to `phpredis` if you want the extension.
+- `DB_URL` does not apply to the fiber connections. Remove their `url` key and set `DB_HOST`, `DB_PORT`, `DB_DATABASE`, `DB_USERNAME` and `DB_PASSWORD` instead.
 
 ### Concurrent Middleware
 
