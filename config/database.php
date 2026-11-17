@@ -101,20 +101,22 @@ return [
 
         /*
         |--------------------------------------------------------------------------
-        | Fiber-Based Non-Blocking Connections (amphp)
+        | Fiber-Based Non-Blocking Connections (fledge-fiber)
         |--------------------------------------------------------------------------
         |
-        | These connections use amphp for non-blocking Fiber-based I/O.
+        | These connections use fledge-fiber for non-blocking Fiber-based I/O.
         | Queries suspend the current Fiber while waiting for the database,
         | allowing other Fibers to progress concurrently.
         |
-        | Requires: composer require webpatser/fledge-fiber-database
+        | Requires: webpatser/fledge-fiber (installed with this skeleton)
+        |
+        | No 'url' key on purpose: a DB_URL would replace the driver below
+        | with the URL scheme and turn these into blocking PDO connections.
         |
         */
 
-        'amphp-mysql' => [
-            'driver' => 'amphp-mysql',
-            'url' => env('DB_URL'),
+        'fledge-mysql' => [
+            'driver' => 'fledge-mysql',
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'laravel'),
@@ -130,8 +132,8 @@ return [
             'pool_idle_timeout' => env('DB_POOL_IDLE_TIMEOUT', 60),
         ],
 
-        'amphp-mariadb' => [
-            'driver' => 'amphp-mariadb',
+        'fledge-mariadb' => [
+            'driver' => 'fledge-mariadb',
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'laravel'),
@@ -147,8 +149,8 @@ return [
             'pool_idle_timeout' => env('DB_POOL_IDLE_TIMEOUT', 60),
         ],
 
-        'amphp-pgsql' => [
-            'driver' => 'amphp-pgsql',
+        'fledge-pgsql' => [
+            'driver' => 'fledge-pgsql',
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '5432'),
             'database' => env('DB_DATABASE', 'laravel'),
@@ -209,7 +211,7 @@ return [
 
     'redis' => [
 
-        'client' => env('REDIS_CLIENT', 'amphp'),
+        'client' => env('REDIS_CLIENT', 'fledge'),
 
         'options' => [
             'cluster' => env('REDIS_CLUSTER', 'redis'),
