@@ -54,6 +54,7 @@ Things worth knowing before going to production with Fledge:
 
 - **Redis Cluster** is supported by `fledge-fiber` (`v13.7.0.1`+) via Laravel's standard `clusters.*` config, with full API parity against `PhpRedisClusterConnection` / `PredisClusterConnection`. Multi-key commands must share a hash tag (`{tag}.key`), `SELECT` to a non-zero database is rejected, MULTI/EXEC stays within one slot, and pipelines route per-command (no atomicity across slots). Standalone and Sentinel Redis work too.
 - **PHP 8.5 hosting** was released in November 2025. Availability across managed hosts (Forge, Vapor, Ploi, Laravel Cloud) is still rolling out, check your host before committing.
+- **Differences from stock Laravel** in the Redis, MySQL TLS, HTTP and Livewire drivers are listed in [fledge-fiber: Differences from stock Laravel](https://github.com/webpatser/fledge-fiber#differences-from-stock-laravel). The queue worker signal caveat (Revolt signal handling) is described in the [framework README](https://github.com/webpatser/fledge-framework#what-changed), under "What Changed".
 - **Active branch** is `fledge-13`, not `main`. Released tags follow `v13.X.Y.N` where `N` is the Fledge patch counter on top of Laravel `X.Y.0`.
 
 ### Fiber Database Drivers
