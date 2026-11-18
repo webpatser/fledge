@@ -2,6 +2,7 @@
 
 ## [Unreleased](https://github.com/webpatser/fledge/compare/v13.1.2.1...master)
 
+* Raise the framework floor to `^13.42` (fledge-framework v13.42.0.4) and fledge-fiber to `^13.42` (v13.42.0.3); skeleton release v13.42.0.4 (2026-11-18).
 * Fix the shipped fiber DB connections: rename `amphp-mysql`, `amphp-mariadb` and `amphp-pgsql` (connections and drivers) to `fledge-mysql`, `fledge-mariadb` and `fledge-pgsql`, the drivers `fledge-fiber` registers. Existing apps must rename theirs and update `DB_CONNECTION`.
 * Remove `url` from the fiber connections: `DB_URL` would replace their driver with the URL scheme and make them blocking PDO connections. Use `DB_HOST`, `DB_PORT`, `DB_DATABASE`, `DB_USERNAME` and `DB_PASSWORD` for them.
 * Default `REDIS_CLIENT` is now `fledge` (was `amphp`, which has no connector). Existing apps with `REDIS_CLIENT=amphp` must switch to `fledge` or `phpredis`.
