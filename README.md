@@ -1,8 +1,8 @@
 # Fledge
 
-**Laravel 13 application skeleton, optimized for PHP 8.5**
+**Laravel 13 application skeleton, optimized for PHP 8.6**
 
-This is the app skeleton for [Fledge](https://github.com/webpatser/fledge-framework), a drop-in replacement for Laravel's framework that uses PHP 8.5's native features for ~17% better performance.
+This is the app skeleton for [Fledge](https://github.com/webpatser/fledge-framework), a drop-in replacement for Laravel's framework that uses PHP 8.6's native features for ~17% better performance.
 
 > Forked from [`laravel/laravel`](https://github.com/laravel/laravel) and rebased onto a clean history.
 
@@ -23,7 +23,7 @@ After install, verify you are running Fledge and not stock Laravel:
 
 ```bash
 bash vendor/webpatser/fledge-framework/bin/verify-fledge-install.sh
-# OK   running Fledge framework v13.42.0.2
+# OK   running Fledge framework v13.43.0.3
 ```
 
 ## What You Get
@@ -40,8 +40,9 @@ Out of the box, Fledge includes:
 
 ```
 fledge (this skeleton)
-  └─ requires webpatser/fledge-framework   Laravel 13 fork, PHP 8.5 optimized
+  └─ requires webpatser/fledge-framework   Laravel 13 fork, PHP 8.6 optimized
       └─ requires webpatser/fledge-fiber   Fiber async: Redis, DB, HTTP, DNS, primitives
+          └─ requires webpatser/fledge-loop  Event loop: timers, streams, signals, fork support
 
 Optional companions:
   webpatser/torque                         Fiber queue worker (Horizon alternative)
@@ -53,8 +54,8 @@ Optional companions:
 Things worth knowing before going to production with Fledge:
 
 - **Redis Cluster** is supported by `fledge-fiber` (`v13.7.0.1`+) via Laravel's standard `clusters.*` config, with full API parity against `PhpRedisClusterConnection` / `PredisClusterConnection`. Multi-key commands must share a hash tag (`{tag}.key`), `SELECT` to a non-zero database is rejected, MULTI/EXEC stays within one slot, and pipelines route per-command (no atomicity across slots). Standalone and Sentinel Redis work too.
-- **PHP 8.5 hosting** was released in November 2025. Availability across managed hosts (Forge, Vapor, Ploi, Laravel Cloud) is still rolling out, check your host before committing.
-- **Differences from stock Laravel** in the Redis, MySQL TLS, HTTP and Livewire drivers are listed in [fledge-fiber: Differences from stock Laravel](https://github.com/webpatser/fledge-fiber#differences-from-stock-laravel). The queue worker signal caveat (Revolt signal handling) is described in the [framework README](https://github.com/webpatser/fledge-framework#what-changed), under "What Changed".
+- **PHP 8.6 hosting**: Fledge requires PHP 8.6, released in November 2026. Availability across managed hosts (Forge, Vapor, Ploi, Laravel Cloud) is still rolling out, check your host before committing.
+- **Differences from stock Laravel** in the Redis, MySQL TLS, HTTP and Livewire drivers are listed in [fledge-fiber: Differences from stock Laravel](https://github.com/webpatser/fledge-fiber#differences-from-stock-laravel). The queue worker signal caveat (event-loop signal handling) is described in the [framework README](https://github.com/webpatser/fledge-framework#what-changed), under "What Changed".
 - **Active branch** is `fledge-13`, not `main`. Released tags follow `v13.X.Y.N` where `N` is the Fledge patch counter on top of Laravel `X.Y.0`.
 
 ### Fiber Database Drivers
@@ -144,14 +145,20 @@ composer require "laravel/framework:^13.0" -W
 
 ## Requirements
 
-- PHP 8.5+
+- PHP 8.6+
 - intl extension
 - Composer 2.x
 - PHPUnit 11, 12, or 13 (matches laravel/framework support)
 
+### PHP version policy
+
+This application supports only the latest stable PHP release. When a new PHP version is released, the next release of this application requires it and support for the previous PHP version ends. Currently: PHP 8.6.
+
 ## Credits
 
 Built on [Laravel](https://laravel.com) by [Taylor Otwell](https://github.com/taylorotwell) and the Laravel community.
+
+Fledge's async layer started as a port of [amphp](https://amphp.org) and its event loop as a port of [Revolt](https://revolt.run), both MIT licensed. Those projects showed how far fibers can take PHP, and Fledge builds on that work. Fledge has since gone its own way: PHP 8.6 only, shaped around Laravel, and maintained independently, so it does not track either project.
 
 ## License
 

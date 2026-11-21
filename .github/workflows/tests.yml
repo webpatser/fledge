@@ -17,7 +17,7 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        php: [8.5]
+        php: ['8.6']
 
     name: PHP ${{ matrix.php }}
 
@@ -33,6 +33,7 @@ jobs:
         with:
           php-version: ${{ matrix.php }}
           extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite
+          ini-values: zend.assertions=1, assert.exception=1
           coverage: none
 
       - name: Install Composer dependencies

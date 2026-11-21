@@ -2,8 +2,8 @@
     "$schema": "https://getcomposer.org/schema.json",
     "name": "webpatser/fledge",
     "type": "project",
-    "description": "Laravel 13 application skeleton optimized for PHP 8.5.",
-    "keywords": ["laravel", "framework", "php85", "fledge"],
+    "description": "Laravel 13 application skeleton optimized for PHP 8.6.",
+    "keywords": ["laravel", "framework", "php86", "fledge"],
     "license": "MIT",
     "repositories": [
         {
@@ -22,11 +22,10 @@
         }
     ],
     "require": {
-        "php": "^8.5",
+        "php": "^8.6",
         "laravel/tinker": "^3.0",
-        "symfony/polyfill-php86": "^1.37",
-        "webpatser/fledge-fiber": "^13.42",
-        "webpatser/fledge-framework": "^13.42"
+        "webpatser/fledge-fiber": "^13.43.0.3",
+        "webpatser/fledge-framework": "^13.43.0.3"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

@@ -2,6 +2,12 @@
 
 ## [Unreleased](https://github.com/webpatser/fledge/compare/v13.1.2.1...master)
 
+* **Breaking:** require PHP 8.6 (`"php": "^8.6"`); PHP 8.5 is no longer supported. CI runs on 8.6 only, with `zend.assertions=1`. The README states the PHP version policy: only the latest stable PHP release is supported.
+* Raise the framework floor to `^13.43.0.3` (fledge-framework v13.43.0.3) and fledge-fiber to `^13.43.0.3`; both run on the Fledge event loop (`webpatser/fledge-loop`) instead of Revolt. Skeleton release v13.43.0.3.
+* Drop `symfony/polyfill-php86`, which is redundant on PHP 8.6.
+* Bump `packages/framework` to `b58c735b93` (fledge-framework v13.43.0.3 candidate).
+* README: amphp and Revolt credited as the origins of Fledge's async layer and event loop, which Fledge now maintains independently.
+
 * Raise the framework floor to `^13.42` (fledge-framework v13.42.0.4) and fledge-fiber to `^13.42` (v13.42.0.3); skeleton release v13.42.0.4 (2026-11-18).
 * Fix the shipped fiber DB connections: rename `amphp-mysql`, `amphp-mariadb` and `amphp-pgsql` (connections and drivers) to `fledge-mysql`, `fledge-mariadb` and `fledge-pgsql`, the drivers `fledge-fiber` registers. Existing apps must rename theirs and update `DB_CONNECTION`.
 * Remove `url` from the fiber connections: `DB_URL` would replace their driver with the URL scheme and make them blocking PDO connections. Use `DB_HOST`, `DB_PORT`, `DB_DATABASE`, `DB_USERNAME` and `DB_PASSWORD` for them.
