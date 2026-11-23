@@ -5,7 +5,7 @@
 * **Breaking:** require PHP 8.6 (`"php": "^8.6"`); PHP 8.5 is no longer supported. CI runs on 8.6 only, with `zend.assertions=1`. The README states the PHP version policy: only the latest stable PHP release is supported.
 * Raise the framework floor to `^13.43.0.3` (fledge-framework v13.43.0.3) and fledge-fiber to `^13.43.0.3`; both run on the Fledge event loop (`webpatser/fledge-loop`) instead of Revolt. Skeleton release v13.43.0.3.
 * Drop `symfony/polyfill-php86`, which is redundant on PHP 8.6.
-* Bump `packages/framework` to `b58c735b93` (fledge-framework v13.43.0.3 candidate).
+* Bump `packages/framework` to `374efcc6b8` (fledge-framework v13.43.0.3).
 * README: amphp and Revolt credited as the origins of Fledge's async layer and event loop, which Fledge now maintains independently.
 
 * Raise the framework floor to `^13.42` (fledge-framework v13.42.0.4) and fledge-fiber to `^13.42` (v13.42.0.3); skeleton release v13.42.0.4 (2026-11-18).
