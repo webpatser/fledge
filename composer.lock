@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3f87ab9652f1c5a43cce2fd391f733b1",
+    "content-hash": "5a879d4e2b229e1b97bb7068c0bf02d2",
     "packages": [
         {
             "name": "brick/math",
@@ -1181,16 +1181,16 @@
         },
         {
             "name": "laravel/prompts",
-            "version": "v0.3.27",
+            "version": "v0.3.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/prompts.git",
-                "reference": "abdfc75a1ae6c6f21522daed50da7124cbff09d2"
+                "reference": "72247703c4d4ac1d6122955c90433aa9429bd236"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/prompts/zipball/abdfc75a1ae6c6f21522daed50da7124cbff09d2",
-                "reference": "abdfc75a1ae6c6f21522daed50da7124cbff09d2",
+                "url": "https://api.github.com/repos/laravel/prompts/zipball/72247703c4d4ac1d6122955c90433aa9429bd236",
+                "reference": "72247703c4d4ac1d6122955c90433aa9429bd236",
                 "shasum": ""
             },
             "require": {
@@ -1233,10 +1233,10 @@
             ],
             "description": "Add beautiful and user-friendly forms to your command-line applications.",
             "support": {
-                "source": "https://github.com/laravel/prompts/tree/v0.3.27"
+                "source": "https://github.com/laravel/prompts/tree/v0.3.28"
             },
-            "time": "2026-11-09T16:07:10+00:00",
-            "published-time": "2026-11-09T16:09:07+00:00"
+            "time": "2026-11-23T14:41:10+00:00",
+            "published-time": "2026-11-24T16:27:03+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -1371,16 +1371,16 @@
         },
         {
             "name": "league/commonmark",
-            "version": "2.10.7",
+            "version": "2.10.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "8eb53e906fd60c67038d22f1f1cab420ed58b8be"
+                "reference": "681e662a40c805c567f52d603b64d55282ea356c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/8eb53e906fd60c67038d22f1f1cab420ed58b8be",
-                "reference": "8eb53e906fd60c67038d22f1f1cab420ed58b8be",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/681e662a40c805c567f52d603b64d55282ea356c",
+                "reference": "681e662a40c805c567f52d603b64d55282ea356c",
                 "shasum": ""
             },
             "require": {
@@ -1474,8 +1474,8 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-10-31T13:35:37+00:00",
-            "published-time": "2026-10-31T13:35:57+00:00"
+            "time": "2026-11-24T15:44:47+00:00",
+            "published-time": "2026-11-24T15:45:01+00:00"
         },
         {
             "name": "league/config",
@@ -5842,16 +5842,16 @@
         },
         {
             "name": "webpatser/fledge-fiber",
-            "version": "v13.43.0.3",
+            "version": "v13.44.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webpatser/fledge-fiber.git",
-                "reference": "774b680ef8af1861e37522be414f5ef021ef70f8"
+                "reference": "ead902c0cd1989716bb699ee66c6d800250354b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webpatser/fledge-fiber/zipball/774b680ef8af1861e37522be414f5ef021ef70f8",
-                "reference": "774b680ef8af1861e37522be414f5ef021ef70f8",
+                "url": "https://api.github.com/repos/webpatser/fledge-fiber/zipball/ead902c0cd1989716bb699ee66c6d800250354b4",
+                "reference": "ead902c0cd1989716bb699ee66c6d800250354b4",
                 "shasum": ""
             },
             "require": {
@@ -5991,23 +5991,23 @@
                 "websocket"
             ],
             "support": {
-                "source": "https://github.com/webpatser/fledge-fiber/tree/v13.43.0.3",
+                "source": "https://github.com/webpatser/fledge-fiber/tree/v13.44.1.0",
                 "issues": "https://github.com/webpatser/fledge-fiber/issues"
             },
-            "time": "2026-11-22T13:10:35+00:00"
+            "time": "2026-11-25T08:32:27+00:00"
         },
         {
             "name": "webpatser/fledge-framework",
-            "version": "v13.43.0.3",
+            "version": "v13.44.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webpatser/fledge-framework.git",
-                "reference": "374efcc6b8e1556a8fa9765570fbb060e4c1e4ed"
+                "reference": "5937c02b8ddbc242450d7c139f61db7549b42900"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webpatser/fledge-framework/zipball/374efcc6b8e1556a8fa9765570fbb060e4c1e4ed",
-                "reference": "374efcc6b8e1556a8fa9765570fbb060e4c1e4ed",
+                "url": "https://api.github.com/repos/webpatser/fledge-framework/zipball/5937c02b8ddbc242450d7c139f61db7549b42900",
+                "reference": "5937c02b8ddbc242450d7c139f61db7549b42900",
                 "shasum": ""
             },
             "require": {
@@ -6115,7 +6115,7 @@
                 "ext-gmp": "*",
                 "fakerphp/faker": "^1.24",
                 "intervention/image": "^4.2",
-                "jasonmccreary/double": "^1.1",
+                "jasonmccreary/double": "^1.2.1",
                 "laravel/pao": "^1.0.6",
                 "laravel/pint": "^1.18",
                 "league/flysystem-aws-s3-v3": "^3.25.1",
@@ -6250,7 +6250,7 @@
                 "issues": "https://github.com/webpatser/fledge-framework/issues",
                 "source": "https://github.com/webpatser/fledge-framework"
             },
-            "time": "2026-11-23T08:09:42+00:00"
+            "time": "2026-11-25T08:31:49+00:00"
         },
         {
             "name": "webpatser/fledge-loop",
